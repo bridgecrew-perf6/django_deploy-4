@@ -32,11 +32,11 @@ services:
     restart: always
 
   web:
-    build: ./
+    build: .
     expose:
       - "8000"
     volumes:
-      - ./django_deploy:/var/www/html/django_deploy
+      - .:/var/www/html/django_deploy
       - media_vol:/var/www/html/django_deploy/media
       - ./compose/uwsgi:/tmp
     links:
