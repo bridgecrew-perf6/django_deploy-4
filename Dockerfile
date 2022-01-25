@@ -16,6 +16,8 @@ WORKDIR /var/www/html/django_deploy
 
 ADD . /var/www/html/django_deploy
 
+RUN /usr/local/bin/python -m pip install --upgrade pip
+
 RUN pip install -r requirements.txt
 
 # Windows环境下编写的start.sh每行命令结尾有多余的\r字符，需移除。

@@ -4,6 +4,12 @@
 - [Django + Uwsgi + Nginx](https://blog.csdn.net/weixin_42134789/article/details/106205182)
 
 docker run -it --name mysite3 -p 8000:8000 \
-    -v /data/code/django_deploy:/var/www/html/django_deploy \
-    -d django_mysite_img:v1
+-v /data/code/django_deploy:/var/www/html/django_deploy \
+-d django_mysite_img:v1
 
+
+docker run -it -p 8080:8080 --name mysite-nginx \
+-v /data/code/django_deploy/static:/usr/share/nginx/html/static \
+-v /data/code/django_deploy/media:/usr/share/nginx/html/media \
+-v /data/code/django_deploy/compose/nginx/log:/var/log/nginx \
+-d mynginx:v1
