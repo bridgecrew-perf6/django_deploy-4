@@ -2,6 +2,7 @@
 
 - [Django + Uwsgi(單容器)](https://zhuanlan.zhihu.com/p/141976805)
 - [Django + Uwsgi + Nginx](https://blog.csdn.net/weixin_42134789/article/details/106205182)
+- [Django + Uwsgi + Nginx + Redis + Mysql](https://zhuanlan.zhihu.com/p/145364353)
 
 docker run -it --name mysite3 -p 8000:8000 \
 -v /data/code/django_deploy:/var/www/html/django_deploy \

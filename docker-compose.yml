@@ -28,7 +28,7 @@ services:
       - ./compose/mysql/conf/my.cnf:/etc/mysql/my.cnf
       - ./compose/mysql/init:/docker-entrypoint-initdb.d/
     ports:
-      - "3306:3306"
+      - "3305:3305"
     restart: always
 
   web:
