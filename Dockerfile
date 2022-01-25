@@ -17,3 +17,8 @@ WORKDIR /var/www/html/mysite1
 ADD . /var/www/html/mysite1
 
 RUN pip install -r requirements.txt
+
+# Windows环境下编写的start.sh每行命令结尾有多余的\r字符，需移除。
+RUN sed -i 's/\r//' ./start.sh
+
+RUN chmod +x ./start.sh
