@@ -7,14 +7,14 @@ MAINTAINER Eddy
 # (https://github.com/awslabs/amazon-sagemaker-examples/issues/319)
 ENV PYTHONUNBUFFERED 1
 
-RUN mkdir -p /var/www/html/mysite1
+RUN mkdir -p /var/www/html/django_deploy
 
-# 在容器内/var/www/html/下创建 mysite1文件夹
-RUN mkdir -p /var/www/html/mysite1
+# 在容器内/var/www/html/下创建 django_deploy文件夹
+RUN mkdir -p /var/www/html/django_deploy
 
-WORKDIR /var/www/html/mysite1
+WORKDIR /var/www/html/django_deploy
 
-ADD . /var/www/html/mysite1
+ADD . /var/www/html/django_deploy
 
 RUN pip install -r requirements.txt
 
