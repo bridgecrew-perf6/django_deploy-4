@@ -13,7 +13,7 @@ services:
       - redis_vol:/data
       - ./compose/redis/redis.conf:/etc/redis/redis.conf
     ports:
-      - "6379:6379"
+      - "6380:6380"
     restart: always
 
   mysql:

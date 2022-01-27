@@ -20,3 +20,16 @@ docker run -it -p 8080:8080 --name mysite-nginx \
 ```
 DEBUG=True
 ```
+
+- docker-compose
+```
+# 进入docker-compose.yml所在文件夹，输入以下命令构建镜像
+sudo docker-compose build
+# 查看已生成的镜像
+sudo docker images
+# 启动容器组服务
+sudo docker-compose up
+# 查看运行中的容器
+sudo docker ps
+```
+
