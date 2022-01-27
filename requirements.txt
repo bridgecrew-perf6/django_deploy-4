@@ -9,3 +9,4 @@ django-redis==4.11.0
 redis==3.5.0
 Pillow==7.1.2
 django-environ==0.8.1
+django-simpleui==2022.1
