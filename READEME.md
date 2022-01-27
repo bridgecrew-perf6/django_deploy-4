@@ -14,3 +14,9 @@ docker run -it -p 8080:8080 --name mysite-nginx \
 -v /data/code/django_deploy/media:/usr/share/nginx/html/media \
 -v /data/code/django_deploy/compose/nginx/log:/var/log/nginx \
 -d mynginx:v1
+
+
+- 在部屬環境中，請自行增加`.env`檔案
+```
+DEBUG=True
+```
