@@ -33,3 +33,6 @@ sudo docker-compose up
 sudo docker ps
 ```
 
+# 引用套件
+- [django-simple-UI](https://simpleui.72wo.com/docs/simpleui/doc.html#%E4%BB%8B%E7%BB%8D)
+
